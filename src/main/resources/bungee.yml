@@ -1,0 +1,4 @@
+name: PingChecker
+version: '${project.version}'
+main: de.bettausrosen.pingchecker.PingChecker
+description: Simple ping checker for bungeecord
