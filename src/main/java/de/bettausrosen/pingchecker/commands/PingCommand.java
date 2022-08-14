@@ -36,19 +36,19 @@ public class PingCommand extends Command {
             if (args.length == 1) {
                 ProxiedPlayer target = ProxyServer.getInstance().getPlayer(args[0]);
                 if (target.getPing() <= 70) {
-                    sender.sendMessage(PingChecker.PREFIX + "§e" + target.getDisplayName() +  "'s ping is §2§l" + target.getPing() + "§7!");
+                    sender.sendMessage(PingChecker.PREFIX + "§r" + target.getDisplayName() +  "§r's §7ping is §2§l" + target.getPing() + "§7!");
                 }
                 if (target.getPing() <= 100 && target.getPing() > 70) {
-                    sender.sendMessage(PingChecker.PREFIX + "§e" + target.getDisplayName() +  "'s ping is §a§l" + target.getPing() + "§7!");
+                    sender.sendMessage(PingChecker.PREFIX + "§r" + target.getDisplayName() +  "§r's §7ping is §a§l" + target.getPing() + "§7!");
                 }
                 if (target.getPing() > 100 && target.getPing() <= 130) {
-                    sender.sendMessage(PingChecker.PREFIX + "§e" + target.getDisplayName() +  "'s ping is §e§l" + target.getPing() + "§7!");
+                    sender.sendMessage(PingChecker.PREFIX + "§r" + target.getDisplayName() +  "§r's §7ping is §e§l" + target.getPing() + "§7!");
                 }
                 if (target.getPing() > 130 && target.getPing() <= 180) {
-                    sender.sendMessage(PingChecker.PREFIX + "§e" + target.getDisplayName() +  "'s ping is §6§l" + target.getPing() + "§7!");
+                    sender.sendMessage(PingChecker.PREFIX + "§r" + target.getDisplayName() +  "§r's §7ping is §6§l" + target.getPing() + "§7!");
                 }
                 if (target.getPing() > 180) {
-                    sender.sendMessage(PingChecker.PREFIX + "§e" + target.getDisplayName() +  "'s ping is §4§l" + target.getPing() + "§7!");
+                    sender.sendMessage(PingChecker.PREFIX + "§r" + target.getDisplayName() +  "§r's §7ping is §4§l" + target.getPing() + "§7!");
                 }
             }
 
